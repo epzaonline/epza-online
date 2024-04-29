@@ -1,0 +1,373 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*header*/
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #0f172a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logos{
+    font-size: 32px;
+    color: #5db938;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before{
+    content: '';
+    position:absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+
+
+
+/*about*/
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ /*   scroll-snap-align: start; */
+}
+/*
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}*/
+
+h1 {
+    color: rgb(226, 226, 226);
+    text-shadow: 2px 2px 4px #000;
+}
+h3{
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+
+}
+
+.one{
+
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("images/08.JPEG") no-repeat center center/cover;
+
+}
+
+.two{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("images/IMG_9994.jpg") no-repeat center center/cover;
+
+}
+
+.three{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("images/liftdrywall.jpg") no-repeat center center/cover;
+}
+
+
+.stud{
+
+    transform: rotate(0deg);
+    margin-right: 10rem;
+
+}
+
+.drywall{
+    transform: rotate(0deg);
+    margin-left: -9rem;
+
+}
+
+.butt{
+    margin: 4.5rem;
+    padding: 8px 14px;
+    cursor: pointer;
+    border: 2px solid #0f172a;
+    box-shadow: 2px 2px 0 0 white, 4px 4px 0 0 #0f172a;
+    transition-duration: 200ms;
+}
+
+.butt:hover{
+    box-shadow: 3px 3px white, 6px 6px 0 0 #0f172a;
+    transform: translate(-2px, -2px);
+}
+
+/*topper*/
+
+.mai{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+
+    justify-content: space-between;
+}
+
+.sideba{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    align-items: center;
+    background:  linear-gradient(rgba(14, 49, 143, 0.7),rgba(14, 95, 55, 0.7)) ;
+    background-size: cover;
+
+    margin: 1rem;
+
+}
+
+.bodyare{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 50%;
+    background:  linear-gradient(rgba(14, 49, 143, 0.7),rgba(14, 95, 55, 0.7));
+
+    margin: 1rem;
+
+}
+
+
+
+/*metal frame*/
+
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 400px;
+
+    justify-content: space-between;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 20%;
+    margin: 1rem;
+
+}
+
+.bodyarea{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 70%;
+    background:     linear-gradient(rgba(14, 49, 143, 0.7),rgba(14, 95, 55, 0.7)) ;
+}
+
+/*drywall*/
+
+.mains{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 400px;
+
+    justify-content: space-between;
+}
+
+.sidebars{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 20%;
+    margin: 1rem;
+
+}
+
+.bodyareas{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 70%;
+    background: linear-gradient(rgba(14, 49, 143, 0.7),rgba(14, 95, 55, 0.7))    ;
+}
+
+
+
+/*index*/
+
+.text-box{
+
+    flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("images/costco.jpg") no-repeat center center/cover;
+
+
+}
+
+.button{
+
+    position: relative;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+
+
+}
+
+.button:hover{
+
+    background: var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr);
+
+}
+
+.button{
+
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 55px;
+
+}
+
+/*gallery*/
+
+.gallery{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.gallery img{
+    width: 100%;
+    cursor: pointer;
+}
+
+/*contact*/
+
+.contact{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(14, 49, 143, 0.7),rgba(14, 95, 55, 0.7)),url(images/cover.JPEG);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+@media screen and (max-width: 600px){
+
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 100px;
+        background: #0f172a;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+    
+    .logos{
+        font-size: 24px;
+        color: #5db938;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    
+    .navbar a{
+        position: relative;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 40px;
+    }
+    
+    .navbar a::before{
+        content: '';
+        position:absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        transition: .3s;
+    }
+    
+    .navbar a:hover::before{
+        width: 100%;
+    }
+
+/*about*/
+.bodyarea p {
+    font-size: 20px;
+}
+
+.bodyareas{
+    font-size: 20px;
+}
+
+.contact{
+    width: 100%;
+}
+
+.contact img{
+    margin-top: 10rem;
+    width: 100%;
+}
+
+}
+
+
+
