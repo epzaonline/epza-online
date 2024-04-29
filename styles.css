@@ -60,6 +60,8 @@ html{
 }
 
 
+
+
 /*about*/
 section {
     height: 100vh;
@@ -301,7 +303,71 @@ h3{
 
 
 
+@media screen and (max-width: 600px){
 
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 100px;
+        background: #0f172a;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+    
+    .logos{
+        font-size: 24px;
+        color: #5db938;
+        text-decoration: none;
+        font-weight: 700;
+    }
+    
+    .navbar a{
+        position: relative;
+        font-size: 18px;
+        color: #fff;
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 40px;
+    }
+    
+    .navbar a::before{
+        content: '';
+        position:absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        transition: .3s;
+    }
+    
+    .navbar a:hover::before{
+        width: 100%;
+    }
+
+/*about*/
+.bodyarea p {
+    font-size: 20px;
+}
+
+.bodyareas{
+    font-size: 20px;
+}
+
+.contact{
+    width: 100%;
+}
+
+.contact img{
+    margin-top: 10rem;
+    width: 100%;
+}
+
+}
 
 
 
