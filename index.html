@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Website</title>
+    <script src="script.js" defer></script>
+
+    <!-- Link to an external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Optional: Add a favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+      <header>
+            <img src="images/logoepza.png" alt="Company Logo" class="logo">
+
+        <nav>
+            <ul>
+                
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="services.html">Services ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="services.html">Metal Framing</a></li>
+                        <li><a href="services.html">Drywall</a></li>
+                        <li><a href="services.html">Plywood</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1></h1>
+            <img src="images/logo.png" alt="Hero Image" class="responsive-img">
+            <p>Licensed. Bonded. Insured.</p>
+        </section>
+
+        <section id="about">
+            <div class="overlay-content">
+            <h2>About Us</h2>
+            <p>Information about the company.</p>
+            <button><a href="about.html">Learn More</a></button>
+            </div>
+            <img src="images/pro.jpg" alt="Web Development" class="responsive-img service-image">
+        </section>
+
+        <section id="services">
+            <div class="overlay-content">
+            <h2>Our Services</h2>
+            <p>Details of what the company offers.</p>
+            <button id="learn-more"><a href="services.html">Learn More</a></button>
+            </div>
+            <img src="images/IMG_9994.jpg" alt="SEO Services" class="responsive-img service-image">
+        </section>
+
+        <section id="contact">
+            <div class="overlay-content">
+            <h2>Contact Us</h2>
+            <p>Ways to reach us.</p>
+            <button><a href="contact.html">Learn More</a></button>
+            </div>
+            <img src="images/cover.png" alt="Design Services" class="responsive-img service-image"> 
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>EPZA Construction LLC.</h3>
+                <p>© 2025 All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
